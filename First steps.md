@@ -147,10 +147,11 @@ pacman -S linux-zen         \
           base-devel        \
           networkmanager    \
           wireless-regdb    \
-          neofetch          \
+          fastfetch         \
           openssh           \
           nano              \
           wget              \
+          tree              \
           git
 
 ```
@@ -229,7 +230,7 @@ N.B. C'è il parametro `root` se vi vuole cambiare mountpoint [wiki](https://wik
 In `/etc/mkinitcpio.conf` modificare gli hook come segue: ([wiki](https://wiki.archlinux.org/title/dm-crypt/Encrypting_an_entire_system#Configuring_mkinitcpio))
 
 ```text
-HOOKS=(base systemd autodetect microcode modconf kms keyboard sd-vconsole sd-encrypt block filesystems fsck)
+HOOKS=(base systemd autodetect microcode modconf kms keyboard sd-vconsole block sd-encrypt filesystems fsck)
 ```
 
 ### GRUB install and configuration
