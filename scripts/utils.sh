@@ -12,5 +12,5 @@ input_password() {
 
   stty echo
   printf "\n"
-  echo "$password" > "/install/$1-password"
+  printf '%s' "$password" > "/install/$1-password"
 }

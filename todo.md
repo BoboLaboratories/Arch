@@ -1,0 +1,4 @@
+- abilitare servizi vari (paccache, systemd-boot-update)
+- timezone
+- relatime vs noatime
+- systemd-boot default loader arch.conf vs @saved
